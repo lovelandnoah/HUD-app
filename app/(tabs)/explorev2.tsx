@@ -6,7 +6,8 @@ import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { IconSymbol } from "@/components/ui/IconSymbol";
-// import
+// import MapView, { Marker } from "react-native-maps";
+// import { GOOGLE_API_KEY } from "@env";
 
 export default function TabTwoScreen() {
   return (
@@ -24,6 +25,21 @@ export default function TabTwoScreen() {
       <ThemedView style={styles.titleContainer}>
         <ThemedText type="title">Exploreyyyy</ThemedText>
       </ThemedView>
+      {/* <MapView
+        style={{ height: 300, margin: 16 }}
+        initialRegion={{
+          latitude: 37.78825,
+          longitude: -122.4324,
+          latitudeDelta: 0.0922,
+          longitudeDelta: 0.0421,
+        }}
+      >
+        <Marker
+          coordinate={{ latitude: 37.78825, longitude: -122.4324 }}
+          title="Marker Title"
+          description="Marker Description"
+        />
+      </MapView> */}
       <ThemedText>
         This app includes example code to help you get started.
       </ThemedText>
